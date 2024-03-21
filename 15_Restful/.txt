@@ -1,0 +1,13 @@
+
+1.RestFul routes -> 
+2.REST apis -> to provde data
+request -> data output
+restful (api)
+
+
+app.get("",(req, res)=>{
+
+})
+
+A way writing is called RestFul
+

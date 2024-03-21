@@ -1,0 +1,15 @@
+
+npm init
+
+npm init -y (default vakues)
+
+
+npm install figlet
+
+npm install give-me-a-joke
+
+npm install colors
+
+Package.JSON -> Basic inform project
+package.lock.JSON -> detailed information
+node_modules -> cloud / actual code

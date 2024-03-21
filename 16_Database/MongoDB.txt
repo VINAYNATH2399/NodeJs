@@ -1,0 +1,112 @@
+
+
+                MOngoDB
+
+Architectures :-    two types 1. Monolithic   2. Microservice
+
+Monolithic:- 1 server + 1 Database
+Microservice:- multiple server + multiple database
+
+What is MOngoDB?
+MongoDb is a NOSQL. isko hm node, express mein istamaal kr sakte having
+
+Why MOngoDB?
+ 1. easy syntax    2. highly cpmpatible(almost similar to JS)
+
+MongoDb me data BSON(Binary space object notation) ke form me hota hai
+
+Some Command of MongoDb
+
+1. mongosh 
+2. show database or show dbs 
+3. use database ka naam 
+    agar jo database hm select kiye hain agr vo nhi hai toh vo create ho jayega
+4. show collection
+5. db -> ye btata hai ki me konse database me khada hu
+6. db.createCollection('naam')
+7. exit -> ctrl + C
+8. db.collection.drop() -> remove collection
+9. db.drop database()  -> is command ko use nhi karna hai
+
+10. db.collectionname.insert/upate/etc(collection ka naam)
+        chintu> db.stuudents.insertOne({name:"xyz",rolno:1})
+            (current database)
+       {
+       acknowledged: true,
+       insertedId: ObjectId('659bc5d4a5d789d74d39ad33')
+        (uniqueId)
+        }
+
+11. db.collectionname.find() -> sara data miljayega jo bhi insert kiya hai collection ke andar
+
+      chintu> db.stuudents.find({})
+      [
+  { _id: ObjectId('659bc5d4a5d789d74d39ad33'), name: 'xyz', rolno: 1 }
+      ]
+
+12. db.vinay.insertMany([{},{},{}]) -> insert many data in collection
+
+    chintu> db.vinay.insertMany([{name:"abc"},{name:"def"},{name:"ghi"}])
+ {
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('659bcb21a5d789d74d39ad36'),
+    '1': ObjectId('659bcb21a5d789d74d39ad37'),
+    '2': ObjectId('659bcb21a5d789d74d39ad38')
+  }
+ }
+
+
+13. db.vinay.find({name:"abc"}) 
+
+    chintu> db.vinay.find({name:"abc"})
+   [ { _id: ObjectId('659bcb21a5d789d74d39ad36'), name: 'abc' } ]
+
+14. db.vinay.updateOne({1},{2}) 
+     1. kisko change karna hai   2. kisme change karna hai
+
+   
+chintu> db.vinay.updateOne({name:"ghi"},{$set:{name:"xyz"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+chintu> db.vinay.find({})
+[
+  {
+    _id: ObjectId('659bc896a5d789d74d39ad34'),
+    name: 'bengali',
+    age: 25
+  },
+  { _id: ObjectId('659bcac8a5d789d74d39ad35') },
+  { _id: ObjectId('659bcb21a5d789d74d39ad36'), name: 'abc' },
+  { _id: ObjectId('659bcb21a5d789d74d39ad37'), name: 'def' },
+  { _id: ObjectId('659bcb21a5d789d74d39ad38'), name: 'xyz' }
+]
+                         
+15. db.vinay.deleteOne({})
+   
+   db.vinay.deleteOne({name:"vin"})
+{ acknowledged: true, deletedCount: 1 }
+chintu> db.vinay.find({})
+[
+  {
+    _id: ObjectId('659bc896a5d789d74d39ad34'),
+    name: 'bengali',
+    age: 25
+  },
+  { _id: ObjectId('659bcac8a5d789d74d39ad35') },
+  { _id: ObjectId('659bcb21a5d789d74d39ad36'), name: 'xyz' },
+  { _id: ObjectId('659bcb21a5d789d74d39ad37'), name: 'def' }
+]
+
+    db.vinay.deleteMany({})
+    
+   agar hm deleteOne({}) empty karenge toh first delete hoga
+   agar hm deleteMany({}) empty karenge toh pura delete hoga
+
+16.
+

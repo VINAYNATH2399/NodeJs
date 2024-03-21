@@ -1,0 +1,18 @@
+h1{
+    font-size: 30px;
+    color: red;
+    border: 5px solid black;
+}
+
+p{
+    color: yellowgreen;
+}
+
+ul{
+    color:blue;
+}
+
+ul li{
+    font-size: 10px;
+    font-weight:800;
+}

@@ -1,0 +1,56 @@
+
+NPM (Node Package Manager) is the default package manager
+for Node.js, and it is used to install, manage, and distribute Node.js 
+packages (which are libraries or modules of reusable code). Here are 
+some common commands and tasks associated with NPM in Node.js:
+
+1. Installing Packages:
+To install a package, you can use the following command:
+
+npm install package-name
+
+For example, to install the "express" package, you would run:
+
+npm install express
+This installs the package locally in your project. If you want to install a package globally (accessible from any project), you can add the -g flag:
+
+npm install -g package-name
+
+2. Package.json:
+NPM uses a package.json file to manage project metadata and dependencies. You can create a package.json file using the following command:
+
+npm init
+Follow the prompts to provide information about your project. Alternatively, you can use the -y flag to accept the default values:
+
+npm init -y
+
+3. Installing Dependencies from package.json:
+If you have a package.json file in your project,
+you can install all dependencies listed in it using:
+
+npm install
+
+4. Uninstalling Packages:
+To uninstall a package, you can use the following command:
+
+npm uninstall package-name
+This removes the package from your project.
+
+5. Listing Installed Packages:
+To see a list of installed packages and their versions, you can use:
+
+npm list
+
+6. Updating Packages:
+To update a package to the latest version, you can use:
+
+npm update package-name
+To update all packages, you can use:
+
+npm update
+
+7. Creating Global Commands:
+When you install a package globally, it may provide command-line tools. 
+To use these tools from the command line, you might need to add 
+the global node_modules/.bin directory to your system's PATH. 
+Alternatively, you can use the npx command to run packages without installing them globally.

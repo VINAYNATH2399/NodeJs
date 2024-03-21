@@ -1,0 +1,44 @@
+
+
+In MongoDB, you can use the logical operators $and and $or to combine multiple conditions in a query.
+
+$and Operator:
+The $and operator performs a logical AND operation on an array of expressions. It selects documents that satisfy all the specified conditions.
+
+Example:
+
+// Find documents where age is 25 and name is "John"
+db.collection.find({
+  $and: [
+    { age: 25 },
+    { name: "John" }
+  ]
+})
+This query will return documents that match both conditions: age is 25 and name is "John".
+
+$or Operator:
+The $or operator performs a logical OR operation on an array of expressions. It selects documents that satisfy at least one of the specified conditions.
+
+Example:
+
+// Find documents where age is 25 or name is "John"
+db.collection.find({
+  $or: [
+    { age: 25 },
+    { name: "John" }
+  ]
+})
+This query will return documents that match either of the conditions: age is 25 or name is "John".
+
+Combining $and and $or:
+You can also combine $and and $or to create more complex queries:
+
+Example:
+
+// Find documents where (age is 25 and name is "John") or (age is 30 and name is "Alice")
+db.collection.find({
+  $or: [
+    { $and: [{ age: 25 }, { name: "John" }] },
+    { $and: [{ age: 30 }, { name: "Alice" }] }
+  ]
+})

@@ -1,0 +1,54 @@
+ 
+    MongoDB 
+
+equal ->  $eq
+
+greater  ->  $gte
+
+less   ->   $lte
+
+
+In MongoDB, you can use various query operators to perform comparisons. The most common comparison operators are:
+
+Equality:
+
+{ field: value } matches documents where the value of the field is equal to the specified value.
+
+Example:
+
+db.collection.find({ age: 25 })
+Greater Than:
+
+{ field: { $gt: value } } matches documents where the value of the field is greater than the specified value.
+
+Example:
+
+db.collection.find({ age: { $gt: 25 } })
+Greater Than or Equal To:
+
+{ field: { $gte: value } } matches documents where the value of the field is greater than or equal to the specified value.
+
+Example:
+
+db.collection.find({ age: { $gte: 25 } })
+Less Than:
+
+{ field: { $lt: value } } matches documents where the value of the field is less than the specified value.
+
+Example:
+
+db.collection.find({ age: { $lt: 25 } })
+Less Than or Equal To:
+
+{ field: { $lte: value } } matches documents where the value of the field is less than or equal to the specified value.
+
+Example:
+
+db.collection.find({ age: { $lte: 25 } })
+These operators can be used in various combinations to construct complex queries. Make sure to replace collection, field, and value with your actual collection name, field name, and the value you are comparing against.
+
+Example:
+
+
+// Find documents where age is greater than 21 and less than or equal to 30
+db.users.find({ age: { $gt: 21, $lte: 30 } })

@@ -1,0 +1,100 @@
+
+
+In Node.js, the File System (fs) module is used to interact with the file system 
+of the operating system. This module provides a variety of functions for working with 
+files and directories, allowing you to perform tasks such as reading from or writing to files, 
+creating or deleting directories, and more.
+
+Here are some common tasks you can perform using the fs module in Node.js:
+
+1. Reading a File:
+
+const fs = require('fs');
+
+fs.readFile('example.txt', 'utf8', (err, data) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
+
+
+2. Writing to a File:
+
+const fs = require('fs');
+
+fs.writeFile('example.txt', 'Hello, Node.js!', (err) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log('File written successfully.');
+});
+
+
+3. Appending to a File:
+
+
+const fs = require('fs');
+
+fs.appendFile('example.txt', ' Appending text.', (err) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log('Data appended to file.');
+});
+
+4. Creating a Directory:
+
+javascript
+Copy code
+const fs = require('fs');
+
+fs.mkdir('myDirectory', (err) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log('Directory created successfully.');
+});
+
+5. Reading a Directory:
+
+const fs = require('fs');
+
+fs.readdir('.', (err, files) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log('Files in the current directory:', files);
+});
+
+
+6. Deleting a File:
+
+const fs = require('fs');
+
+fs.unlink('example.txt', (err) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log('File deleted successfully.');
+});
+
+
+7. Deleting a Directory:
+
+
+const fs = require('fs');
+
+fs.rmdir('myDirectory', (err) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log('Directory deleted successfully.');
+});

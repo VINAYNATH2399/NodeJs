@@ -1,0 +1,74 @@
+   Padne ka tarika 
+   4             3                  2                      1
+Route name       URL             HTTP Verb           description
+
+Index           /blogs             GET            Display a list of all blogs
+
+New             /blog/new          GET            Show form to make new blogs
+
+Create          /blogs             POST           Add new blog to database, then redirect
+
+Show            /blogs/:id         GET            Show info about one blogs
+
+Edit            /blogs/:id/edit    GET            Show edit form of one blog
+
+Update          /blogs/:id         PUT            Update a particular blog, then redirect
+
+destroy         /blogs/:id         DELETE         delete a particular blog, then redirect
+
+Redirect:- sending a GET request ona particular path/Route.
+
+Why use 
+jab bhi kisi blog mein kuch edit karana hota hai tab 
+hm get ye post request nhi bhej sakte ustime pe get ye post
+request bhejna is bad either you will sending a put or path 
+request.
+
+
+Important HTTP request methods:- 
+
+GET
+The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
+
+HEAD
+The HEAD method asks for a response identical to a GET request, but without the response body.
+
+POST
+The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.
+
+PUT
+The PUT method replaces all current representations of the target resource with the request payload.
+
+DELETE
+The DELETE method deletes the specified resource.
+
+CONNECT
+The CONNECT method establishes a tunnel to the server identified by the target resource.
+
+OPTIONS
+The OPTIONS method describes the communication options for the target resource.
+
+TRACE
+The TRACE method performs a message loop-back test along the path to the target resource.
+
+PATCH
+The PATCH method applies partial modifications to a resource.
+
+
+GET (प्राप्त करें): GET विधि निर्दिष्ट संसाधन से डेटा प्राप्त करने के लिए है।
+
+HEAD (हेड): HEAD विधि एक GET अनुरोध के समान है, लेकिन बिना डेटा के प्रतिसाद के साथ।
+
+POST (पोस्ट): POST विधि सर्वर पर स्थिति में परिवर्तन के लिए एक संविदान प्रस्तुत करती है।
+
+PUT (रखना): PUT विधि लक्षित संसाधन की सभी वर्तमान प्रतिष्ठानों को बदलती है।
+
+DELETE (हटाएं): DELETE विधि निर्दिष्ट संसाधन को हटाती है।
+
+CONNECT (कनेक्ट): CONNECT विधि लक्षित सर्वर के साथ एक टनल स्थापित करती है।
+
+OPTIONS (विकल्प): OPTIONS विधि लक्षित संसाधन के लिए संवाद विकल्पों का वर्णन करती है।
+
+TRACE (ट्रेस): TRACE विधि संसाधन के पथ पर एक संदेश लूपबैक परीक्षण करती है।
+
+PATCH (पैच): PATCH विधि संसाधन पर आंशिक संशोधन लागू करती है।

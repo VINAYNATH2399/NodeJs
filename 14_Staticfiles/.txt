@@ -1,0 +1,14 @@
+
+staticfiles
+  * images / videos
+  * css
+  * html
+  * js
+
+haar incoming request pe konsi file chlti hai -> middleware
+
+
+
+
+
+

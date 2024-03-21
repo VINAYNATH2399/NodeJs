@@ -1,0 +1,7 @@
+
+1. Doesnot require instalation
+
+2. only works when require method is used
+
+
+

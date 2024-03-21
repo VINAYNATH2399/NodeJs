@@ -1,0 +1,85 @@
+      
+        mangooes 
+   1. minilithic    2. microservice
+
+3 layers  :-  presentation layer -> html, css, js
+              business logic layer  -> express / node
+              DB layers        -> mongodb / mongose
+
+
+MVC architecture :-
+    M - Model
+    v - view
+    c - controllers
+
+MVC -> monolithic aplies
+
+
+Ecommerce project
+
+Products - > collection
+             model -> scheme (blue print)
+
+
+seed.js -> saman ko ek sath bhejne ke liye technical tool me bolte hai seed karna
+
+
+Types of relationship
+1:1    1:few     1:many
+
+Timestamps -> 
+By setting timestamps to true in the schema options, 
+Mongoose automatically manages the createdAt and updatedAt fields for you.
+
+const mongoose = require('mongoose');
+
+const yourSchema = new mongoose.Schema({
+  // Your schema definition here
+}, { timestamps: true });
+
+const YourModel = mongoose.model('YourModel', yourSchema);
+
+
+validation 
+
+server side validation karte hai edit mein 3rd party ki madad see joi validation
+  isko kaam karne ka 2 steps
+    1. define schema joi
+    2. Joi validate
+
+
+connect flash:- 
+
+English:
+"connect-flash" is a middleware for Node.js web applications, often used with the Express.js 
+framework. It provides a way to store and retrieve flash messages. Flash messages are temporary 
+messages that are typically used to show notifications to users after a certain action, 
+like a successful login or an error during a form submission.
+
+Hindi:
+"connect-flash" एक मिडलवेयर है जो नोड.जेएस वेब एप्लिकेशन्स के लिए है, 
+जो अक्सर एक्सप्रेस.जेएस फ्रेमवर्क के साथ उपयोग होता है। 
+इसे फ्लैश मैसेज स्टोर और रिट्रीव करने का एक तरीका प्रदान करता है। फ्लैश मैसेज अस्थायी संदेश होते हैं 
+जो सामान्यत: किसी कृत्रिम कार्रवाई के बाद उपयोगकर्ताओं को सूचनाएँ दिखाने के लिए होते हैं, 
+जैसे कि सफल लॉगिन या फॉर्म सबमिट के दौरान की गई कोई त्रुटि के बाद।
+
+
+locals - > ek middleware bnake local ko set karna hai
+
+
+Authentication:- 
+
+
+
+Hashing Algorithim: ye ek algorithm hai jo input accept karta hai uske 
+         corresponding ek output deta hai
+
+
+Passport :-  Passport.local    
+
+Static Method :- user naam ke method pe directly lagne wale method ko static method kheta hai
+
+serializeUser() Generates a function that is used by Passport to serialize users into the session
+deserializeUser() Generates a function that is used by Passport to deserialize users into the session
+
+register(user, password, cb) Convenience method to register a new user instance with a given password.

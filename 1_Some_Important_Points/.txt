@@ -1,0 +1,38 @@
+
+What is Node.JS
+Js runtime environment which is used to run the JS Code.
+
+Advantages of NodeJS
+1. Command line tools
+2. web servers
+3. native application -> destop(Andriod, IOS, WEb)
+
+Why NodeJS ?
+Ans:- Node.js is chosen for its ability to use JavaScript on the server side, 
+its asynchronous and non-blocking I/O model, fast execution, a robust ecosystem 
+of packages, and its scalability, among other factors.
+These characteristics make it a popular choice for building modern and efficient server-side applications.
+
+Difference Between Browser and Node JS ?
+Ans:-  Browser                                      Node JS
+  1.  document is available               1.  document is not available
+  2.  window (global Object)              2.  global (global object)
+  3.  filesystem access is not present    3.  filesystem access is present          
+
+How to NodeJS in Command
+Ans:- phela folder tak jana hai phir node file ka naam
+
+Process -> object which carries all the information about your node.js
+
+process.argv-> array and path of node js
+    node app.js -> array 
+                   multiple
+                   path of node  
+                   path of project (app.js)
+                   element extra dikh jayega
+                   
+
+
+
+
+

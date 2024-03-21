@@ -1,0 +1,20 @@
+
+Path & Query parameter
+https://www.reddit.com/r/dog
+  1           2        3   4   
+
+1 -> protocol
+2 -> resource URL
+3 -> permanent path
+4 -> temparory path -> gives output
+
+Infinite routes banana posible nahi hai
+
+Path parameter:- Infinite routes banane ke liye /r/:vin
+    app.get("/r/:subreddit", (req,res)=>{
+
+    })
+
+/search/?q = boys
+        query parameter
+

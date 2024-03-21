@@ -1,0 +1,16 @@
+
+POSTMAN -> server mein request bhej sakte hai
+
+get -> read
+
+post -> create
+
+patch -> update
+
+put -> upload(file upload)
+
+delete -> remove
+
+
+
+

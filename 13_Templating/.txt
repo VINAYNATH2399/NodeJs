@@ -1,0 +1,12 @@
+How to make a template?
+ template banta hai template engine ki madad se
+     hbs, ejs, jade, nunjucks, pug
+
+ejs -> very simple to js
+  offical documation->  https://ejs.co/
+
+npm instal ejs
+
+All the template made inside the folder calld views
+
+https://ejs.co/#install

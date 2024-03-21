@@ -1,0 +1,28 @@
+
+dir -> to see all directory
+
+cd folder name: change the directory
+
+cd.. -> 1 level back
+
+mkdir folder -> make folder/directory name
+
+type nul > filename.txt -> make a file
+
+code. -> open vs code at a particular folder
+
+del filename.txt -> delete file
+
+rmdir -> delete folder/directory name
+
+cls -> clear
+
+rm -rf folder -> recusively forcefully
+
+type filename -> shows the content
+
+rename "old_folder_name" "new_folder_name" -> move file (changes the name)
+
+.exit -> ye nodejs command se exit hone k liye use hota hai
+
+

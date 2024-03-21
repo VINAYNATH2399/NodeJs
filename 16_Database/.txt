@@ -1,0 +1,95 @@
+
+                       Database
+
+Database:- Collection of information(useful data)
+
+Data:- collection of properties (everything is data)
+
+
+Why we use Database ?
+Ans:- for DATA REDUNDANCY
+DATA REDUNDANCY:- mother problem of all problems
+          (all small problems are raised from it)
+
+Defination:-Data redundancy refers to the duplication of data within a database or information system. 
+It occurs when the same piece of data is stored in multiple places. 
+While some level of redundancy may be necessary for data integrity and performance optimization, excessive redundancy can lead to inefficiencies and increased risk of inconsistencies. 
+
+
+डेटा रेडंडेंसी एक ऐसी स्थिति है जब हम एक जानकारी को एक से ज्यादा जगहों पर स्टोर करते हैं। 
+इसका मतलब है कि एक ही डेटा की कई प्रतियाँ होती हैं।
+
+क्यों होती है डेटा रेडंडेंसी?
+
+बेहतर प्रदर्शन के लिए: कभी-कभी यह हमें एक जगह से दूसरी जगह जानकारी प्राप्त करने में मदद कर सकती है जिससे काम को तेजी से किया जा सकता है।
+
+
+जानकारी की सुरक्षा के लिए: कभी-कभी जरुरत हो सकती है कि हमें किसी महत्वपूर्ण डेटा की कई प्रतियाँ रखनी पड़े ताकि अगर कोई कमी हो तो हम उसकी जगह पर दूसरी प्रतियाँ से जानकारी प्राप्त कर सकें।
+
+
+मुश्किलें और समस्याएं:
+
+असंगति: यदि एक स्थान पर जानकारी को अपडेट किया जाता है लेकिन दूसरे स्थान पर नहीं, तो इससे असंगतियाँ हो सकती हैं।
+
+अत्यधिक स्टोरेज का उपयोग: एक ही डेटा को कई बार स्टोर करने से स्टोरेज का बहुत जगह लेता है।
+
+जटिलता: रेडंडेंट डेटा को संबोधित करना सिस्टम को जटिल बना सकता है, विशेषकर जब अपडेट को कई स्थानों पर समरूपीत करना होता है।
+
+
+डेटाबेस नॉर्मलाइजेशन:
+
+डेटाबेस नॉर्मलाइजेशन एक प्रक्रिया है जिससे डेटा की रेडंडेंसी को कम किया जाता है, जिससे तालिकाएं और संबंध स्थापित किए जा सकते हैं। इसमें बड़ी तालिकाएं छोटी तालिकाओं में विभाजित की जाती हैं और उनके बीच संबंध स्थापित किए जाते हैं।
+
+
+Types of Database
+ 1. SQL               2. NOSQL
+
+ SQL -> it is a query language. Those database which use sql in order to perform some
+ task. Ex:- MYSQL, Oracle
+
+ NOSQL:- aisa database jo SQL istamaal nhi karte 
+ EXample:- MOngoDB, dynamoDB
+
+
+DBMS:- Database Management system is a software to intract with your database.
+ 
+ Types of DBMS:- 1. RDBMS     2. MRDBMS
+
+     RDBMS                      MRDBMS
+ 1. relational BDMS             non-relational BDMS
+ 2. tables are created          object format mein data ko rakhte hai
+                                Isme table nhi bante hai
+ 3. EX:- SQL                       EX:- NOSQL
+
+
+Which type of DB to select?
+Ans:- 
+Database selection crieria :-  CAP
+     C - Consistency      A- Availability      P - Partition Tolerance
+
+CAP Theorem:
+
+Consistency: Everyone sees the same data at the same time. 
+      Imagine you and your friends checking a score; you all should see the same score at the same time.
+
+Availability: The system is always ready to respond to your request. 
+              Even if the information is not the absolute latest, you get a response. Think of it like checking the weather on your phone; 
+              it may not be the most recent, but you get a response.
+
+Partition Tolerance: The system keeps working even if some computers can't talk to each other. 
+                This is like having a group chat, and even if some friends can't receive messages, others can keep chatting.
+
+Now, the tricky part is you can't have all three at the same time. It's like picking two out of three. 
+Here are the options:
+
+Consistent and Available (CA Systems): Everyone sees the same data, and the system is always ready, 
+                       but it might struggle if some computers can't talk to each other.
+
+Consistent and Partition-Tolerant (CP Systems): Everyone sees the same data, 
+                        and the system keeps working even if some computers can't communicate. However, it might not always be immediately available.
+
+Available and Partition-Tolerant (AP Systems): The system is always ready to respond, 
+                        and it keeps working even if some computers can't talk. However, it might show you information that's not the absolute latest.
+
+
+

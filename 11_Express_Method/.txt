@@ -1,0 +1,43 @@
+
+1. mkdir 
+
+2. npm init -y
+
+3. npm i express nodemon
+
+4. type nul> index.js
+
+request -> URL
+        -> Method :- Get, Post, Patch
+        -> Path :- /cat, /dog
+
+middleware -> middleware ke under kabhi bhi res.send() ko nhi bhejte
+    function()
+
+"
+Middleware in Express.js is a set of functions that can be added to the request-response 
+processing pipeline. These functions have access to the request object (req), the response object (res), 
+and can execute tasks or modify the request and response. Middleware functions are commonly used to perform 
+tasks such as authentication, logging, parsing data, and more. 
+They are added using app.use() or related HTTP method functions in Express and are executed 
+in the order they are added to the application.
+
+"
+
+middleware advance:- 
+Middleware functions take three parameters: req (request object), res (response object), and next (callback function to pass control to the next middleware).
+Example:
+
+const customMiddleware = (req, res, next) => {
+  console.log('This is a custom middleware');
+  next();
+};
+app.use(customMiddleware);
+
+app.use -> har request par chalega (GET, Post, patch, delete)
+
+app.get -> bs path pr chalega
+
+
+
+

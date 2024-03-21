@@ -1,0 +1,21 @@
+
+
+       Library                              framework
+flexible, aap apne hisaab se      rigid vo bolega apne code ko mujhe
+mujhe use karo                    ase likho jaise maine bola hai
+
+Ex- JQuery, React                 Ex - express, Bootstrap
+
+
+    API                          AJAX
+    url(http//jsondata)          tarika aur vay of calling
+
+     
+
+File Syatem -> CRUD   => Create Read Update deleted
+
+
+
+
+
+

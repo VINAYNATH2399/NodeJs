@@ -1,0 +1,54 @@
+
+Express :- Express is a framework. jaise bolega vaise karna padhega
+
+Create our own server
+
+initialize :- npm init
+             npm init-y
+
+npm init -> package.json
+
+npm i express -> node module(folder)
+                 package-lock-json
+
+
+baat karne ke liye     localhost:8080
+
+Always kill the server :- ctrl + c
+
+code run :- node index.json
+
+" So every time you make a change in your code you need to restart your server "
+
+default path -> '/'
+
+default method -> 'GET'
+
+'barbar restart karne se kon bachayega' -> nodemom npm
+
+defination nodemom:- 
+nodemon is a tool that helps develop Node.js based applications 
+by automatically restarting the node application when file changes 
+in the directory are detected.
+
+To install nodemom -> npm install nodemon
+
+
+To create shortcut we need to add ->  "start" : "nodemon index.js"
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon index.js"
+  },
+E:\Web Development\NodeJs\10_Express>npm start
+
+ap.use -> middleware => function
+  "which will run on every incoming request"
+
+npm init-y
+npm i epress nodemon
+
+entryfile :- index.js
+
+
+
+

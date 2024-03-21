@@ -1,0 +1,76 @@
+
+Cookies  & Session
+
+    Cookies:- client side storage(session storage)
+
+    Session ;- Server side storage
+
+cookies:- Key : value pair 
+       cookies are stateful(previous request uspar bhi depandent hoti hai)
+
+   cookies mein important information store nhi karte hai like username password etc
+   isme hm language, recent tab etc
+
+
+cookies application mein hota hai jab hm inspect krenge browser par
+
+cookies ki bhi security increase ho sakti hai jisse hm kheta hai:-
+   Signed cookies
+
+  
+Signed cookies ka use web development me security 
+ke liye hota hai. Jab server aapko koi cookie bhejta hai (jisme aapke login details ho sakte hain), 
+toh woh use ek chhupa hua code ke saath sign karta hai. Jab aap wapas wahi cookie server 
+ko bhejte hain, toh server us sign ko check karta hai ki kya woh cookie sahi hai aur 
+kisi ne use badal nahi diya hai. Isse aapki online jaankari ko surakshit rakha ja sakta hai.
+
+
+       Some cookies limitation:- 
+
+Cookies have some limitations that you should be aware of:
+
+Size Limitation (साइज़ सीमा):
+
+Cookies have a size limit of around 4 KB per domain. If you store too much information in cookies, 
+it might not be saved or transmitted properly.
+
+Security Concerns (सुरक्षा संबंधित चिंताएं):
+
+Cookies are stored on the user's device, and they can be accessed and modified 
+by the user or potentially intercepted by malicious actors. Therefore, sensitive information should be avoided or properly encrypted.
+
+Domain and Path Restriction (डोमेन और पथ प्रतिबंध):
+
+Cookies are associated with a specific domain and path. This means a cookie 
+set for one domain won't be accessible to another, and the cookie's path 
+determines which URLs on the domain can access the cookie.
+
+Expiration (समाप्ति):
+
+Cookies can have an expiration date. Once a cookie expires, it's no longer 
+sent to the server, and the information it holds is considered outdated.
+
+Client-Side Scripting (क्लाइंट-साइड स्क्रिप्टिंग):
+
+Cookies rely on client-side scripting (like JavaScript) to be processed. 
+If a user has disabled JavaScript, cookies may not work as expected.
+
+Cross-Site Scripting (क्रॉस-साइट स्क्रिप्टिंग):
+
+Cookies can be vulnerable to cross-site scripting attacks if not 
+properly secured. It's essential to sanitize and validate cookie data 
+to prevent these security issues.
+
+Cross-Domain Limitations (क्रॉस-डोमेन सीमाएं):
+
+Cookies are subject to the same-origin policy, which means 
+a cookie set for one domain won't be sent to another domain.
+
+
+   
+   session -> key : value
+
+   
+
+
+

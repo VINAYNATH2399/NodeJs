@@ -1,0 +1,45 @@
+
+
+In Node.js, a path is a way to represent and manipulate file paths and directory paths.
+The path module in Node.js provides utilities for working with file and directory paths.
+Here are some commonly used methods in the path module:
+
+1. Joining Paths: path.join([...paths])
+
+Combines multiple path segments into a single path.
+
+const path = require('path');
+const fullPath = path.join(__dirname, 'folder', 'file.txt');
+console.log(fullPath);
+
+2. Resolving Paths: path.resolve([...paths])
+
+const path = require('path');
+const absolutePath = path.resolve('folder', 'file.txt');
+console.log(absolutePath);
+
+3. Getting the Directory Name: path.dirname(path)
+
+const path = require('path');
+const directoryName = path.dirname('/folder/file.txt');
+console.log(directoryName);
+
+4. Getting the Base Name: path.basename(path, [ext])
+
+const path = require('path');
+const fileName = path.basename('/folder/file.txt');
+console.log(fileName);
+
+5. Getting the Extension: path.extname(path)
+
+const path = require('path');
+const extension = path.extname('/folder/file.txt');
+console.log(extension);
+
+6. Normalizing Paths: path.normalize(path)
+
+Normalizes a path, resolving '..' and '.' segments.
+
+const path = require('path');
+const normalizedPath = path.normalize('/folder/../file.txt');
+console.log(normalizedPath);

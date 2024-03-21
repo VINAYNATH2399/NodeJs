@@ -1,0 +1,11 @@
+
+  principle
+
+dry -> donot repear yourself
+
+wet -> write everything twice
+
+Requiring a file:- the require function to include external modules or files into your script.
+
+app.js me hm jo bhi likhenge vo hmm index.js se access kr sakte hai
+

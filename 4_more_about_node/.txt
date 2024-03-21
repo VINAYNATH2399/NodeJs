@@ -1,0 +1,11 @@
+
+
+process.cwd() -> app kahan khade ho
+
+__dirname -> project kahan se chalu hai
+
+isko use karna hai:- node 4_more_about_node\index.js
+
+
+
+
